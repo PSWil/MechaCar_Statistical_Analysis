@@ -20,6 +20,9 @@ Here are the summary results from the linear regression.
 
 ## Summary Statistics on Suspension Coils
 
+In this section, I loaded in the suspension coils dataset. It was comprised of 150 different vehicles ID, 3 different lot numbers, and corresponding PSI levels for each vehicle. From there I created two summary tables to look at the mean, median, variance, and standard deviation of data. The first table looked at of the data as a whole, while the second table looked specific at each of the three different lots that the MechaCars were divided into. Here are the two tables.
+By completing this analysis I want to answer one question:
+
 ### Total Summary Table
 
 ![total_sum_table](https://github.com/PSWil/MechaCar_Statistical_Analysis/blob/main/resources/total_sum_table.png)
@@ -28,28 +31,32 @@ Here are the summary results from the linear regression.
 
 ![lot_sum_table](https://github.com/PSWil/MechaCar_Statistical_Analysis/blob/main/resources/lot_sum_table.png)
 
-In this section, I loaded in the suspension coils dataset. It was comprised of 150 different vehicles ID, 3 different lot numbers, and corresponding PSI levels for each vehicle. From there I created two summary tables to look at the mean, median, variance, and standard deviation of data. The first table looked at of the data as a whole, while the second table looked specific at each of the three different lots that the MechaCars were divided into. Here are the two tables.
-By completing this analysis I want to answer one question:
-
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-The answer to this question is:
-
 Looking at the total summary, the current variance is approximately 76.23 PSI meaning that is does meet the design specification. When looking at the lots individuals, the first two lotas meet the design specification at a varaince of approximately 1.14 PSI and 10.13 PSI respectfully, but the third lot does not. This is becasue the third lot's variance is approximately 220.01 PSI, exceeding the design specification by more than double the alotted amount. Therefore, the manufacturing team should work with the cars in lots 1 and 2 compared to those in lot 3.
 
 ## T-Tests on Suspension Coils
 
 In this section, I wanted to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch. In order to do this, I used R's t.test() function to find four different p-values. The question that I wanted to answer by doing this was:
 
-Do any of the four groups have a statistically different mean from the population mena of 1,500 PSI?
-The answer to this question is:
-
 By using a significance level of 95%, meaning that 95% of the time this tests results would be true, I tested to see if any of the four groups had a statistical difference from the mean of 1,500 PSI. After running the tests, all four p-values where much greater than .05 meaning that I would fail to reject that there is a statistical difference between the four groups and the population mean.
+
 Here is a breakdown of each of the four tests:
 
+### All Manufacturing lots
+
 ![all_lots_t_test](https://github.com/PSWil/MechaCar_Statistical_Analysis/blob/main/resources/all_lots_t_test.png)
+
+### Lot 1
+
 ![lot_1_t_test](https://github.com/PSWil/MechaCar_Statistical_Analysis/blob/main/resources/lot_1_t_test.png)
+
+### Lot 2
+
 ![lot_2_t_test](https://github.com/PSWil/MechaCar_Statistical_Analysis/blob/main/resources/lot_2_t_test.png)
+
+### Lot 3
+
 ![lot_3_t_test](https://github.com/PSWil/MechaCar_Statistical_Analysis/blob/main/resources/lot_3_t_test.png)
+
 
 ## Study Design: MechaCar vs Competition
 
