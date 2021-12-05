@@ -6,17 +6,15 @@ The purpose of this analysis is to analyze some data on the MechaCar's productio
 
 ## Linear Regression to Predict MPG
 
-In order to identify variables that have a significant effect on MPG, I used the miles per gallon dataset. Then I preformed a multiple linear regression to see if it could predict the miles per gallon (mpg) dependent variable by using the vehicle length, vehicle weight, spoiler angle, ground clearance, and all wheel drive (AWD) independent variables. 
-
-Here are the summary results from the linear regression.
+In order to identify variables that have a significant effect on MPG, I used the miles per gallon dataset. I then preformed a multiple linear regression to see if it could predict the miles per gallon (mpg) dependent variable by using the vehicle length, vehicle weight, spoiler angle, ground clearance, and all wheel drive (AWD) independent variables. 
 
 ### Miles Per Gallon Linear Regression
 
 ![liner_reg_summary](https://github.com/PSWil/MechaCar_Statistical_Analysis/blob/main/resources/liner_reg_summary.png)
 
-1. There were two variables that provided a non-random amount of variance: The vehicle length and the ground_clearance. Both of these have extremely small p-value meaning that they had a high level of significance. It also should be noted that the intercept as had a high level of significance meaning that there are still other factors contributing to the variance of the miles per gallon of the MechaCar. 
-2. The slope of the linear model is not considered to be zero. This is because the linear regression shows that some of the independent variables had a significant effect on the dependent variable. If none of the independent variables had an effect on the dependent variable then the linear regression would result in a near zero slope. 
-3. The main indicator of whether the linear model predicts the mpg of the MechaCar is the r-squared value. In this case, it is at 0.7149 mean that out of 100 instances, this model would approximately predict the mpg of the MechaCar correctly 71 times. This means that the model would be considered effective.
+- According to our results, vehicle length and ground clearance (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model. In other words the vehicle length and ground clearance have a significant impact on mpg.
+- In addition, the p-value of our linear regression analysis is 5.35e-11, which is much smaller than our assumed significance level of 0.05%. Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
+- R-squared of approximately 0.71. This indicates that the multiple linear regression will predict 71% of mpg observations.
 
 ## Summary Statistics on Suspension Coils
 
